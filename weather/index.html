@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality & Weather Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- AQI SECTION -->
+        <h2>Latitude:</h2>
+        <input type="number" id="lat" placeholder="Enter Latitude">
+
+        <h2>Longitude:</h2>
+        <input type="number" id="lon" placeholder="Enter Longitude">
+
+        <button onclick="checkAirQuality()">Check AQI</button>
+
+        <div id="result" class="output"></div>
+
+        <hr>
+
+        <!-- WEATHER BY CITY -->
+        <h2>Enter Place (City / Country):</h2>
+        <input type="text" id="place" placeholder="e.g., Hyderabad">
+
+        <button onclick="checkPlaceWeather()">Check Weather</button>
+
+        <div id="placeResult" class="output"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
